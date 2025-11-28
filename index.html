@@ -1,34 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rolling Pelis</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <a href="#"> <span>Rolling</span><span class="logoNegro">Pelis</span> </a>
+      <a href="#" class="logo">
+        <span>Rolling</span><span class="logoNegro">Pelis</span>
+      </a>
       <nav>
         <ul>
           <li><a href="#">Inicio</a></li>
-          <li><a href="#">Peliculas</a></li>
-          <li><a href="#">¿Por qué elegirnos?</a></li>
-          <li><a href="#">contacto</a></li>
+          <li><a href="#peliculas">Películas</a></li>
+          <li><a href="#porque">¿Por qué elegirnos?</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
+      <!-- PORTADA -->
       <section class="portada">
         <h2>Explorá el mundo del cine</h2>
         <div class="portadaOverlay"></div>
       </section>
+
+      <!-- BUSCADOR DE PELÍCULAS -->
       <section id="peliculas" class="seccionPelis">
-        <h2>Buscador de Peliculas</h2>
+        <h2>Buscador de Películas</h2>
         <form>
-          <input type="text" placeholder="Buscar pelicula..." />
+          <input type="text" placeholder="Buscar película..." />
           <button>Buscar 🔍</button>
         </form>
+
         <div class="contenedorPelis">
           <article>
             <img
@@ -40,9 +51,9 @@
           <article>
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoevqOgo2wCvmzRX0BxcbE9xNcR9hcGxtCpw&s"
-              alt="rapido y furioso 5 "
+              alt="Rápido y Furioso 5"
             />
-            <p>rapido y furioso 5</p>
+            <p>Rápido y Furioso 5</p>
           </article>
           <article>
             <img
@@ -74,125 +85,197 @@
           </article>
           <article>
             <img
-              src=" https://play-lh.googleusercontent.com/JCrORvXD8_JA0JfgU8HKlWEBxAy2h7g_DoEdfi5VluS1ugmpvWLmJT6IZss481bVN7GPUHJcPiN1_wke4eQ"
-              alt=" la mascara "
+              src="https://play-lh.googleusercontent.com/JCrORvXD8_JA0JfgU8HKlWEBxAy2h7g_DoEdfi5VluS1ugmpvWLmJT6IZss481bVN7GPUHJcPiN1_wke4eQ"
+              alt="La Máscara"
             />
-            <p>la mascara</p>
+            <p>La Máscara</p>
           </article>
           <article>
             <img
               src="https://pics.filmaffinity.com/Quae_pasao_ayer-567756276-large.jpg"
-              alt=" que poso ayer "
+              alt="Qué pasó ayer"
             />
-            <p>que paso ayer</p>
+            <p>Qué pasó ayer</p>
           </article>
           <article>
             <img
               src="https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/B2aUYFC0qUAkNnjbTHRyhrg3.png"
-              alt="spiderman"
+              alt="Spiderman"
             />
-            <p>spiderman</p>
+            <p>Spiderman</p>
           </article>
           <article>
             <img
-              src=" https://m.media-amazon.com/images/M/MV5BYWQyNTQwNTAtZDE2Yy00NjlhLWE4N2YtYjBkYTM4ZmM3ZDk0XkEyXkFqcGc@._V1_.jpg"
-              alt=" el conjuro "
+              src="https://m.media-amazon.com/images/M/MV5BYWQyNTQwNTAtZDE2Yy00NjlhLWE4N2YtYjBkYTM4ZmM3ZDk0XkEyXkFqcGc@._V1_.jpg"
+              alt="El Conjuro"
             />
-            <p>el conjuro</p>
+            <p>El Conjuro</p>
           </article>
           <article>
             <img
-              src=" https://www.ecartelera.com/carteles/800/898/001_m.jpg"
-              alt=" vaya vacaciones "
+              src="https://www.ecartelera.com/carteles/800/898/001_m.jpg"
+              alt="Vaya Vacaciones"
             />
-            <p>vaya vacacíones</p>
+            <p>Vaya Vacaciones</p>
           </article>
         </div>
       </section>
-      <!-- POR QUE ELEGIRNOS -->
-      <section class="porque">
+
+      <!-- POR QUÉ ELEGIRNOS -->
+      <section id="porque" class="porque">
         <h2>¿Por qué elegirnos?</h2>
         <div class="contenedorTarjetas">
           <article>
             <img
-              src="https://img.icons8.com/?size=100&id=ORAO5DF37nXq&format=png&color=000000"
-              alt=""
+              src="https://e0.pxfuel.com/wallpapers/447/711/desktop-wallpaper-horror-movie-icons-by-darthguyford-fan-art-digital-art-drawings-movies-for-your-mobile-tablet-explore-horror-movie-icon-horror-movie-classic.jpg"
+              width="200"
+              alt="Icono calidad"
             />
-            <h5>Titulo</h5>
-            <p>podes encontrar en un solo sitio las mejores peliculas</p>
+            <h5>Las mejores películas</h5>
+            <p>
+              Encontrá en un solo sitio una gran selección de contenido
+              increíble.
+            </p>
           </article>
+
           <article>
             <img
-              src="https://img.icons8.com/?size=100&id=ORAO5DF37nXq&format=png&color=000000"
-              alt=""
+              src="https://fotografias.antena3.com/clipping/cmsimages01/2017/11/03/D2399949-7424-4DE9-B4A8-1A997A044B18/98.jpg?crop=3786,2130,x0,y0&width=1900&height=1069&optimize=high&format=webply"
+              width="200"
+              alt="Icono velocidad"
             />
-            <h5>Titulo</h5>
-            <p>Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</p>
+            <h5>Búsqueda rápida</h5>
+            <p>
+              Encontrá tus películas favoritas rápidamente con nuestro buscador.
+            </p>
           </article>
+
           <article>
             <img
-              src="https://img.icons8.com/?size=100&id=ORAO5DF37nXq&format=png&color=000000"
-              alt=""
+              src="https://www.mubis.es/media/users/9265/89540/creeis-que-las-caratulas-de-las-peliculas-pueden-llegar-a-venderlas-simplemente-porque-molen-original.jpg"
+              width="200"
+              height="100"
+              alt="Icono fácil"
             />
-            <h5>Titulo</h5>
-            <p>Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</p>
+            <h5>Interfaz sencilla</h5>
+            <p>Navegá fácilmente gracias a nuestro diseño intuitivo.</p>
           </article>
         </div>
       </section>
-      <!-- GALERIA DE IMAGENES -->
+
+      <!-- GALERÍA -->
       <section class="seccionGaleria">
-        <h2>Galeria de imagenes</h2>
+        <h2>Galería de Imágenes</h2>
         <div class="contenedorGrid">
           <div class="itemGrid img1">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd0QKcMTOATa6i9mV8umWWKejlJy76btOVkA&s"
-              alt=""
+              alt="Imagen 1"
             />
           </div>
           <div class="itemGrid img2">
             <img
-              src="https://marketplace.canva.com/EAEa1PXDLCI/1/0/1131w/canva-negro-y-blanco-pel%C3%ADcula-terror-p%C3%B3ster-OkU3Elwi1d0.jpg"
-              alt=""
+              src="https://marketplace.canva.com/EAEa1PXDLCI/1/0/1131w/canva-negro-y-blanco-película-terror-póster-OkU3Elwi1d0.jpg"
+              alt="Imagen 2"
             />
           </div>
           <div class="itemGrid img3">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuwrgPYF6vaTDQgAmAXvtcVxfZ7tc-rZGgeg&s"
-              alt=""
+              alt="Imagen 3"
             />
           </div>
           <div class="itemGrid img4">
             <img
               src="https://pics.filmaffinity.com/Vertical_Freedom-536946603-mmed.jpg"
-              alt=""
+              alt="Imagen 4"
             />
           </div>
           <div class="itemGrid img5">
             <img
               src="https://pbs.twimg.com/media/D2-C6WIW0AA6T6F?format=jpg&name=4096x4096"
-              alt=""
+              alt="Imagen 5"
             />
           </div>
           <div class="itemGrid img6">
             <img
-              src=" https://cdn.culturagenial.com/es/imagenes/peliculas-accion-netflix-og.jpg"
-              alt=""
+              src="https://cdn.culturagenial.com/es/imagenes/peliculas-accion-netflix-og.jpg"
+              alt="Imagen 6"
             />
           </div>
           <div class="itemGrid img7">
             <img
-              src=" https://media.gq.com.mx/photos/5cd71bf64dc0880f2d9adf10/16:9/w_1280,c_limit/Black%20Panther.jpg"
-              alt=""
+              src="https://media.gq.com.mx/photos/5cd71bf64dc0880f2d9adf10/16:9/w_1280,c_limit/Black%20Panther.jpg"
+              alt="Imagen 7"
             />
           </div>
           <div class="itemGrid img8">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPTUryx96UBI2LICUjFcgsaG7jIP_rtgNjEQ&s "
-              alt=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPTUryx96UBI2LICUjFcgsaG7jIP_rtgNjEQ&s"
+              alt="Imagen 8"
             />
           </div>
         </div>
       </section>
     </main>
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+
+      <div class="contactoContenedor">
+        <form class="formContacto">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Tu nombre..." required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Tu email..." required />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            placeholder="Escribí tu mensaje..."
+            rows="5"
+            required
+          ></textarea>
+
+          <button>Enviar 📩</button>
+        </form>
+
+        <div class="infoContacto">
+          <h3>Información</h3>
+          <p>📍 Argentina</p>
+          <p>📧 rollingpelis@contacto.com</p>
+          <p>📞 +54 381 511-1324</p>
+        </div>
+      </div>
+    </section>
   </body>
+  <footer class="footer">
+    <div class="footerContenedor">
+      <div class="footerLogo">
+        <h3><span>Rolling</span><span class="logoNegro">Pelis</span></h3>
+        <p>Tu portal favorito para descubrir películas.</p>
+      </div>
+
+      <div class="footerLinks">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#peliculas">Películas</a></li>
+          <li><a href="#porque">¿Por qué elegirnos?</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="social-link">
+        <p>seguinos</p>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="footerCopy">
+      <p>© 2025 Rolling Pelis - Todos los derechos reservados</p>
+    </div>
+  </footer>
 </html>
