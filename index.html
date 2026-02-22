@@ -1,3 +1,5 @@
+<!doctype html>
+<html lang="es">
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -7,16 +9,31 @@
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
   </head>
+
   <body>
     <header>
+      <a href="#inicio" aria-label="Ir al inicio">
+        <span>Rolling</span><span class="logoNegro">Pelis</span>
+      </a>
+
+      <nav aria-label="Menú principal">
       <a href="#" class="logo">
         <span>Rolling</span><span class="logoNegro">Pelis</span>
       </a>
       <nav>
         <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#peliculas">Películas</a></li>
+          <li><a href="#porque">¿Por qué elegirnos?</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
           <li><a href="#">Inicio</a></li>
           <li><a href="#peliculas">Películas</a></li>
           <li><a href="#porque">¿Por qué elegirnos?</a></li>
@@ -25,97 +42,141 @@
       </nav>
     </header>
 
+    <main id="inicio">
+      <!-- PORTADA -->
+      <section class="portada" aria-label="Portada">
+
     <main>
       <!-- PORTADA -->
       <section class="portada">
         <h2>Explorá el mundo del cine</h2>
-        <div class="portadaOverlay"></div>
+        <div class="portadaOverlay" aria-hidden="true"></div>
       </section>
+
+      <!-- PELÍCULAS -->
 
       <!-- BUSCADOR DE PELÍCULAS -->
       <section id="peliculas" class="seccionPelis">
+        <h2>Buscador de Películas</h2>
+
+        <form action="#" method="get">
+          <input
+            type="text"
+            name="q"
+            placeholder="Buscar película..."
+            aria-label="Buscar película"
+          />
+          <button type="submit">Buscar 🔍</button>
         <h2>Buscador de Películas</h2>
         <form>
           <input type="text" placeholder="Buscar película..." />
           <button>Buscar 🔍</button>
         </form>
 
+
         <div class="contenedorPelis">
           <article>
             <img
               src="https://images.cdn3.buscalibre.com/fit-in/360x360/00/53/00534ae2303d001aa830efde6ff210f0.jpg"
-              alt="Jurassic Park"
+              alt="Póster de Jurassic Park"
+              loading="lazy"
             />
             <p>Jurassic Park</p>
           </article>
+
           <article>
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoevqOgo2wCvmzRX0BxcbE9xNcR9hcGxtCpw&s"
+              alt="Póster de Rápido y Furioso 5"
+              loading="lazy"
               alt="Rápido y Furioso 5"
             />
             <p>Rápido y Furioso 5</p>
+            <p>Rápido y Furioso 5</p>
           </article>
+
           <article>
             <img
               src="https://cdn.warp.la/wp-content/uploads/2024/09/Transformers-006-560x600.jpg"
-              alt="Transformers"
+              alt="Póster de Transformers"
+              loading="lazy"
             />
             <p>Transformers</p>
           </article>
+
           <article>
             <img
-              src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000043029/4ff8a1e4c87575f265e51de4b90de45040aa6e5350b30fab13894bf493f2ea68"
-              alt="Avatar"
+              src="https://play-lh.googleusercontent.com/K74QBFcOq5LxSt5MdJJI12j6nEPGG8alHRpDfBI3LJ-TQ8hjIz3a1JkIXDdL26sZg4knet6FGFwTXA_TGQ"
+              alt="Póster de Avatar"
+              loading="lazy"
             />
             <p>Avatar</p>
           </article>
-          <article>
-            <img
-              src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/06/avatar-2366079.jpg?tf=3840x"
-              alt="Avatar"
-            />
-            <p>Avatar</p>
-          </article>
+
           <article>
             <img
               src="https://es.web.img3.acsta.net/c_310_420/pictures/18/08/14/15/35/4396669.jpg"
-              alt="La Monja"
+              alt="Póster de La Monja"
+              loading="lazy"
             />
             <p>La Monja</p>
           </article>
+
           <article>
             <img
+              src="https://play-lh.googleusercontent.com/JCrORvXD8_JA0JfgU8HKlWEBxAy2h7g_DoEdfi5VluS1ugmpvWLmJT6IZss481bVN7GPUHJcPiN1_wke4eQ"
+              alt="Póster de La Máscara"
+              loading="lazy"
               src="https://play-lh.googleusercontent.com/JCrORvXD8_JA0JfgU8HKlWEBxAy2h7g_DoEdfi5VluS1ugmpvWLmJT6IZss481bVN7GPUHJcPiN1_wke4eQ"
               alt="La Máscara"
             />
             <p>La Máscara</p>
+            <p>La Máscara</p>
           </article>
+
           <article>
             <img
               src="https://pics.filmaffinity.com/Quae_pasao_ayer-567756276-large.jpg"
+              alt="Póster de ¿Qué pasó ayer?"
+              loading="lazy"
               alt="Qué pasó ayer"
             />
+            <p>¿Qué pasó ayer?</p>
             <p>Qué pasó ayer</p>
           </article>
+
           <article>
             <img
               src="https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/B2aUYFC0qUAkNnjbTHRyhrg3.png"
+              alt="Póster de Spider-Man"
+              loading="lazy"
               alt="Spiderman"
             />
+            <p>Spider-Man</p>
             <p>Spiderman</p>
           </article>
+
           <article>
             <img
+              src="https://m.media-amazon.com/images/M/MV5BYWQyNTQwNTAtZDE2Yy00NjlhLWE4N2YtYjBkYTM4ZmM3ZDk0XkEyXkFqcGc@._V1_.jpg"
+              alt="Póster de El Conjuro"
+              loading="lazy"
               src="https://m.media-amazon.com/images/M/MV5BYWQyNTQwNTAtZDE2Yy00NjlhLWE4N2YtYjBkYTM4ZmM3ZDk0XkEyXkFqcGc@._V1_.jpg"
               alt="El Conjuro"
             />
             <p>El Conjuro</p>
+            <p>El Conjuro</p>
           </article>
+
           <article>
             <img
               src="https://www.ecartelera.com/carteles/800/898/001_m.jpg"
+              alt="Póster de Vaya Vacaciones"
+              loading="lazy"
+              src="https://www.ecartelera.com/carteles/800/898/001_m.jpg"
               alt="Vaya Vacaciones"
             />
+            <p>Vaya Vacaciones</p>
             <p>Vaya Vacaciones</p>
           </article>
         </div>
@@ -123,9 +184,16 @@
 
       <!-- POR QUÉ ELEGIRNOS -->
       <section id="porque" class="porque">
+
+      <!-- POR QUÉ ELEGIRNOS -->
+      <section id="porque" class="porque">
         <h2>¿Por qué elegirnos?</h2>
+
         <div class="contenedorTarjetas">
           <article>
+            <i class="fa-solid fa-film porque-icon" aria-hidden="true"></i>
+            <h5>Catálogo variado</h5>
+            <p>Encontrá en un solo sitio películas para todos los gustos.</p>
             <img
               src="https://e0.pxfuel.com/wallpapers/447/711/desktop-wallpaper-horror-movie-icons-by-darthguyford-fan-art-digital-art-drawings-movies-for-your-mobile-tablet-explore-horror-movie-icon-horror-movie-classic.jpg"
               width="200"
@@ -138,7 +206,14 @@
             </p>
           </article>
 
+
           <article>
+            <i
+              class="fa-solid fa-magnifying-glass porque-icon"
+              aria-hidden="true"
+            ></i>
+            <h5>Búsqueda rápida</h5>
+            <p>Buscá tu peli en segundos y descubrí nuevas recomendaciones.</p>
             <img
               src="https://fotografias.antena3.com/clipping/cmsimages01/2017/11/03/D2399949-7424-4DE9-B4A8-1A997A044B18/98.jpg?crop=3786,2130,x0,y0&width=1900&height=1069&optimize=high&format=webply"
               width="200"
@@ -150,7 +225,11 @@
             </p>
           </article>
 
+
           <article>
+            <i class="fa-solid fa-rotate porque-icon" aria-hidden="true"></i>
+            <h5>Siempre actualizado</h5>
+            <p>Sumamos novedades y clásicos para que nunca te falte qué ver.</p>
             <img
               src="https://www.mubis.es/media/users/9265/89540/creeis-que-las-caratulas-de-las-peliculas-pueden-llegar-a-venderlas-simplemente-porque-molen-original.jpg"
               width="200"
@@ -164,59 +243,159 @@
       </section>
 
       <!-- GALERÍA -->
+      <section id="galeria" class="seccionGaleria">
+        <h2>Galería de Imágenes</h2>
+
+
+      <!-- GALERÍA -->
       <section class="seccionGaleria">
         <h2>Galería de Imágenes</h2>
         <div class="contenedorGrid">
           <div class="itemGrid img1">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd0QKcMTOATa6i9mV8umWWKejlJy76btOVkA&s"
+              alt="Póster de película (galería)"
+              loading="lazy"
               alt="Imagen 1"
             />
           </div>
+
           <div class="itemGrid img2">
             <img
+              src="https://marketplace.canva.com/EAEa1PXDLCI/1/0/1131w/canva-negro-y-blanco-pel%C3%ADcula-terror-p%C3%B3ster-OkU3Elwi1d0.jpg"
+              alt="Póster de terror (galería)"
+              loading="lazy"
               src="https://marketplace.canva.com/EAEa1PXDLCI/1/0/1131w/canva-negro-y-blanco-película-terror-póster-OkU3Elwi1d0.jpg"
               alt="Imagen 2"
             />
           </div>
+
           <div class="itemGrid img3">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuwrgPYF6vaTDQgAmAXvtcVxfZ7tc-rZGgeg&s"
+              alt="Póster de película (galería)"
+              loading="lazy"
               alt="Imagen 3"
             />
           </div>
+
           <div class="itemGrid img4">
             <img
               src="https://pics.filmaffinity.com/Vertical_Freedom-536946603-mmed.jpg"
+              alt="Póster de película (galería)"
+              loading="lazy"
               alt="Imagen 4"
             />
           </div>
+
           <div class="itemGrid img5">
             <img
               src="https://pbs.twimg.com/media/D2-C6WIW0AA6T6F?format=jpg&name=4096x4096"
+              alt="Póster de película (galería)"
+              loading="lazy"
               alt="Imagen 5"
             />
           </div>
+
           <div class="itemGrid img6">
             <img
+              src="https://cdn.culturagenial.com/es/imagenes/peliculas-accion-netflix-og.jpg"
+              alt="Películas de acción (galería)"
+              loading="lazy"
               src="https://cdn.culturagenial.com/es/imagenes/peliculas-accion-netflix-og.jpg"
               alt="Imagen 6"
             />
           </div>
+
           <div class="itemGrid img7">
             <img
+              src="https://media.gq.com.mx/photos/5cd71bf64dc0880f2d9adf10/16:9/w_1280,c_limit/Black%20Panther.jpg"
+              alt="Black Panther (galería)"
+              loading="lazy"
               src="https://media.gq.com.mx/photos/5cd71bf64dc0880f2d9adf10/16:9/w_1280,c_limit/Black%20Panther.jpg"
               alt="Imagen 7"
             />
           </div>
+
           <div class="itemGrid img8">
             <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPTUryx96UBI2LICUjFcgsaG7jIP_rtgNjEQ&s"
+              alt="Póster de película (galería)"
+              loading="lazy"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPTUryx96UBI2LICUjFcgsaG7jIP_rtgNjEQ&s"
               alt="Imagen 8"
             />
           </div>
         </div>
       </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="seccionPelis">
+        <h2>Contacto</h2>
+        <p style="color: white; text-align: center; margin-bottom: 10px">
+          ¿Querés sugerir una película? Escribinos.
+        </p>
+
+        <form action="#" method="post" class="form-contacto">
+          <div class="input-icon">
+            <i class="fa-solid fa-user" aria-hidden="true"></i>
+            <input type="text" placeholder="Tu nombre" aria-label="Tu nombre" />
+          </div>
+
+          <div class="input-icon">
+            <i class="fa-solid fa-message" aria-hidden="true"></i>
+            <input
+              type="text"
+              placeholder="Tu mensaje"
+              aria-label="Tu mensaje"
+            />
+          </div>
+
+          <button type="submit" class="btn-contacto">
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            Enviar
+          </button>
+        </form>
+      </section>
+
+      <!-- footer  -->
+      <footer>
+        <div class="footer-contenedor">
+          <div class="footer-logo">
+            <h3>RollingPelis</h3>
+            <p>Tu portal de películas favorito</p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Enlaces</h4>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#peliculas">Películas</a></li>
+              <li><a href="#galeria">Galería</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-redes">
+            <h4>Seguinos</h4>
+            <div class="redes">
+              <a href="#" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copy">
+          <p>© 2026 RollingPelis - Todos los derechos reservados</p>
+        </div>
+      </footer>
     </main>
     <section id="contacto" class="contacto">
       <h2>Contacto</h2>
